@@ -94,6 +94,7 @@ Rollies() {
 				responseRoll=$(( $RANDOM % 20 +1 ))
 				#ReRoll option
 				printf "You rolled $responseRoll\nDo you wish to reroll?\n"
+				sleep 2
 				while true; do
 					select rollagain in Keep_Roll Reroll; do
 						case $rollagain in
@@ -111,6 +112,7 @@ Rollies() {
 								printf "\nYou have used up one of your reroll chances"
 								responseRoll=$(( $RANDOM % 20 +1 ))
 								printf "\nYou have reolled $responseRoll\n"
+								sleep 3
 							break 2
 							fi
 							;;
