@@ -144,9 +144,9 @@ Rollies() {
 		done
 	if [[ $score -gt 8 ]]; then
 		printf "\n\nYour score is $score\nYou Passed this challenge! Congrats!"
-	elif [[ $score -gt 6 && $score -le 8 ]]; then 
+	elif [[ $score -gt 5 && $score -le 8 ]]; then 
 		printf "\n\nYour score is $score\nYou may passed but poorly no benefits from this win."
-	elif [[ $score -lt 6 ]]; then
+	elif [[ $score -lt 5 ]]; then
 		printf "\n\nYour score is $score\nYou have failed this challenge, there will be consequences"
 	fi
 }
